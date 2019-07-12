@@ -45,6 +45,7 @@ class ReadCsv:
         self.save_to_redis(outfile)
         self.move_file(outfile, '/home/nonso/Desktop/finalcsv.csv')
 
-obj = ReadCsv()
-obj.concat_files('/home/nonso/Desktop/csvfiles', '/home/nonso/Desktop/files.csv')
+if __name__ == "__main__":
+    obj = ReadCsv()
+    obj.concat_files('/home/nonso/Desktop/csvfiles', '/home/nonso/Desktop/files.csv')
 
